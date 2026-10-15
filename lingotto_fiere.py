@@ -2,8 +2,8 @@ class LingottoFiere:
     def __init__(self, nome):
         """Inizializza gli attributi e le strutture dati"""
         self.__nome = nome
-        lista_stand=[]
-        lista_espositori=[]
+        self.__lista_stand=[]
+        self.__lista_espositori=[]
 
     """Aggiungere setter e getter se necessari"""
     @property
@@ -19,6 +19,7 @@ class LingottoFiere:
         """Carica i dati (stand ed espositori) dal file"""
         try:
             with open(file_path, "r") as f:
+                pass
 
 
     def assegna_stand_a_espositore(self, codice_stand, codice_espositore):
